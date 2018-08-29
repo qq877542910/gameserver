@@ -1,0 +1,12 @@
+E:\VS_Project\VS2015\C#\GameServer\GameServer\bin\Debug\GameServer.exe.config
+E:\VS_Project\VS2015\C#\GameServer\GameServer\bin\Debug\GameServer.exe
+E:\VS_Project\VS2015\C#\GameServer\GameServer\bin\Debug\GameServer.pdb
+E:\VS_Project\VS2015\C#\GameServer\GameServer\bin\Debug\EntityFramework.dll
+E:\VS_Project\VS2015\C#\GameServer\GameServer\bin\Debug\EntityFramework.SqlServer.dll
+E:\VS_Project\VS2015\C#\GameServer\GameServer\bin\Debug\System.Data.SQLite.dll
+E:\VS_Project\VS2015\C#\GameServer\GameServer\bin\Debug\EntityFramework.xml
+E:\VS_Project\VS2015\C#\GameServer\GameServer\bin\Debug\EntityFramework.SqlServer.xml
+E:\VS_Project\VS2015\C#\GameServer\GameServer\obj\Debug\GameServer.exe
+E:\VS_Project\VS2015\C#\GameServer\GameServer\obj\Debug\GameServer.pdb
+E:\VS_Project\VS2015\C#\GameServer\GameServer\obj\Debug\GameServer.csprojResolveAssemblyReference.cache
+E:\VS_Project\VS2015\C#\GameServer\GameServer\bin\Debug\System.Data.SQLite.pdb
