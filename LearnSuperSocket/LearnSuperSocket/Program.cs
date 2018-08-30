@@ -17,7 +17,7 @@ namespace LearnSuperSocket
             Console.ReadKey();
             Console.WriteLine();
 
-            var appServer = new AppServer();
+            var appServer = new TelnetServer();
 
             //Setup the appServer
             if (!appServer.Setup(2012)) //Setup with listening port
@@ -37,8 +37,8 @@ namespace LearnSuperSocket
                 return;
             }
 
-            appServer.NewSessionConnected += new SessionHandler<AppSession>(appServer_NewSessionConnected);
-            appServer.NewRequestReceived += new RequestHandler<AppSession, StringRequestInfo>(appServer_NewRequestReceived);
+            appServer.NewSessionConnected += new SessionHandler<TelentSession>(appServer_NewSessionConnected);
+            appServer.NewRequestReceived += new RequestHandler<TelentSession, StringRequestInfo>(appServer_NewRequestReceived);
 
             Console.WriteLine("The server started successfully, press key 'q' to stop it!");
 
@@ -56,12 +56,12 @@ namespace LearnSuperSocket
             Console.ReadKey();
         }
 
-        static void appServer_NewSessionConnected(AppSession session)
+        static void appServer_NewSessionConnected(TelentSession session)
         {
             session.Send("Welcome to SuperSocket Telnet Server");
         }
 
-        static void appServer_NewRequestReceived(AppSession session, StringRequestInfo requestInfo)
+        static void appServer_NewRequestReceived(TelentSession session, StringRequestInfo requestInfo)
         {
             switch (requestInfo.Key.ToUpper())
             {
