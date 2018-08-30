@@ -75,7 +75,7 @@ namespace GameServer
             Console.WriteLine("client accept : " + client.RemoteEndPoint);
 
             SocketData send = new SocketData();
-            send.SetData(CN, 0, -1, "server said : hello" , null);
+            send.SetData(cn, 0, -1, "server said : hello" , null);
 
             SendMsg(client,SocketData.SerializeData(send));
 
@@ -90,35 +90,43 @@ namespace GameServer
         {
             StateObject state = ar.AsyncState as StateObject;
             Socket client = state.socket;
-
-            int byteRead = client.EndReceive(ar);
-
-            //包尺寸有问题，断线处理
-            if (byteRead < 1)
+            try
             {
-                if (onConnectChangedAction != null)
-                {
-                    onConnectChangedAction(ConnectType.DisConnect, client);
-                }
-                Console.WriteLine("client disconned!" + client.RemoteEndPoint);
-                return;
-            }
+                int byteRead = client.EndReceive(ar);
 
-            lock (lockObj)
-            {
-                SocketData data;
-                if (SocketData.DeserializeData(state.buff, byteRead, out data))
+                //包尺寸有问题，断线处理
+                if (byteRead < 1)
                 {
-                    Console.WriteLine("read : "+ data.cn +"_" + data.module + "_" + data.cmd + " : " + data.attach.ToString());
-                    if (onReceiveAction != null)
+                    if (onConnectChangedAction != null)
                     {
-                        onReceiveAction(data);
+                        onConnectChangedAction(ConnectType.DisConnect, client);
                     }
+                    Console.WriteLine("client disconned!" + client.RemoteEndPoint);
+                    return;
                 }
-                Array.Clear(state.buff, 0, state.buff.Length);
+
+                lock (lockObj)
+                {
+                    SocketData data;
+                    if (SocketData.DeserializeData(state.buff, byteRead, out data))
+                    {
+                        Console.WriteLine("read : " + data.cn + "_" + data.module + "_" + data.cmd + " : " + data.attach.ToString());
+                        if (onReceiveAction != null)
+                        {
+                            onReceiveAction(data);
+                        }
+                    }
+                    Array.Clear(state.buff, 0, state.buff.Length);
+                }
+                client.BeginReceive(state.buff, 0, state.buff.Length, SocketFlags.None, new AsyncCallback(OnRead), state);
+
             }
-            client.BeginReceive(state.buff, 0, state.buff.Length, SocketFlags.None, new AsyncCallback(OnRead), state);
-        }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
+
+}
 
         public void SendMsg(Socket handle, byte[] msg)
         {

@@ -10,3 +10,15 @@ E:\VS_Project\VS2015\C#\GameServer\GameServer\obj\Debug\GameServer.exe
 E:\VS_Project\VS2015\C#\GameServer\GameServer\obj\Debug\GameServer.pdb
 E:\VS_Project\VS2015\C#\GameServer\GameServer\obj\Debug\GameServer.csprojResolveAssemblyReference.cache
 E:\VS_Project\VS2015\C#\GameServer\GameServer\bin\Debug\System.Data.SQLite.pdb
+E:\Github_Repository\gameserver\GameServer\GameServer\bin\Debug\GameServer.exe.config
+E:\Github_Repository\gameserver\GameServer\GameServer\obj\Debug\GameServer.exe
+E:\Github_Repository\gameserver\GameServer\GameServer\obj\Debug\GameServer.pdb
+E:\Github_Repository\gameserver\GameServer\GameServer\bin\Debug\GameServer.exe
+E:\Github_Repository\gameserver\GameServer\GameServer\bin\Debug\GameServer.pdb
+E:\Github_Repository\gameserver\GameServer\GameServer\bin\Debug\EntityFramework.dll
+E:\Github_Repository\gameserver\GameServer\GameServer\bin\Debug\EntityFramework.SqlServer.dll
+E:\Github_Repository\gameserver\GameServer\GameServer\bin\Debug\System.Data.SQLite.dll
+E:\Github_Repository\gameserver\GameServer\GameServer\bin\Debug\EntityFramework.xml
+E:\Github_Repository\gameserver\GameServer\GameServer\bin\Debug\EntityFramework.SqlServer.xml
+E:\Github_Repository\gameserver\GameServer\GameServer\bin\Debug\System.Data.SQLite.pdb
+E:\Github_Repository\gameserver\GameServer\GameServer\obj\Debug\GameServer.csprojResolveAssemblyReference.cache
