@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using SuperSocket.SocketBase.Protocol;
 
-namespace LearnSuperSocket
+namespace AppSession
 {
     class TelentSession : AppSession<TelentSession>
     {

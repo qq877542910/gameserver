@@ -12,8 +12,8 @@ F:\Github_Project\gameserver\LearnSuperSocket\LearnSuperSocket\bin\Debug\SuperSo
 F:\Github_Project\gameserver\LearnSuperSocket\LearnSuperSocket\bin\Debug\SuperSocket.Facility.xml
 F:\Github_Project\gameserver\LearnSuperSocket\LearnSuperSocket\bin\Debug\SuperSocket.SocketBase.xml
 F:\Github_Project\gameserver\LearnSuperSocket\LearnSuperSocket\bin\Debug\SuperSocket.SocketEngine.xml
-F:\Github_Project\gameserver\LearnSuperSocket\LearnSuperSocket\obj\Debug\LearnSuperSocket.csprojAssemblyReference.cache
 F:\Github_Project\gameserver\LearnSuperSocket\LearnSuperSocket\obj\Debug\LearnSuperSocket.csproj.CoreCompileInputs.cache
 F:\Github_Project\gameserver\LearnSuperSocket\LearnSuperSocket\obj\Debug\LearnSuperSocket.csproj.CopyComplete
 F:\Github_Project\gameserver\LearnSuperSocket\LearnSuperSocket\obj\Debug\LearnSuperSocket.exe
 F:\Github_Project\gameserver\LearnSuperSocket\LearnSuperSocket\obj\Debug\LearnSuperSocket.pdb
+F:\Github_Project\gameserver\LearnSuperSocket\LearnSuperSocket\obj\Debug\LearnSuperSocket.csprojAssemblyReference.cache

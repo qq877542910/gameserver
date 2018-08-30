@@ -4,58 +4,67 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AppSession;
 
-namespace LearnSuperSocket
+class GameController
 {
-    class GameController
+    private static GameController instance;
+
+    public static GameController Instance
     {
-        private static GameController instance;
-
-        public static GameController Instance
+        get
         {
-            get
+            if (instance == null)
             {
-                if (instance == null)
-                {
-                    instance = new GameController();
-                }
-                return instance;
+                instance = new GameController();
+            }
+            return instance;
+        }
+    }
+
+    private List<TelentSession> sessionList = new List<TelentSession>();
+
+    public void AddSession(TelentSession session)
+    {
+        if (!sessionList.Contains(session))
+        {
+            sessionList.Add(session);
+
+            SendToAll("new session in : " + session.SessionID);
+        }
+    }
+
+    public void CloseSession(TelentSession session)
+    {
+        if (sessionList.Contains(session))
+        {
+            sessionList.Remove(session);
+
+            SendToAll("session out : " + session.SessionID);
+        }
+    }
+
+    public void CloseAll()
+    {
+        lock (sessionList)
+        {
+            for (int i = sessionList.Count - 1; i >= 0; i--)
+            {
+                CloseSession(sessionList[i]);
             }
         }
+    }
 
-        private List<TelentSession> sessionList = new List<TelentSession>();
-
-        public void AddSession(TelentSession session)
+    public void SendToAll(string msg)
+    {
+        foreach (var val in sessionList)
         {
-            if (!sessionList.Contains(session))
-            {
-                sessionList.Add(session);
-
-                SendToAll("new session in : " + session.SessionID);
-            }
+            val.Send(msg);
         }
+    }
 
-        public void CloseSession(TelentSession session)
-        {
-            if (sessionList.Contains(session))
-            {
-                sessionList.Remove(session);
-
-                SendToAll("session out : " + session.SessionID);
-            }
-        }
-
-        public void SendToAll(string msg)
-        {
-            foreach (var val in sessionList)
-            {
-                val.Send(msg);
-            }
-        }
-
-        public void SendToSession(TelentSession session, string msg)
-        {
-            session.Send(msg);
-        }
+    public void SendToSession(TelentSession session, string msg)
+    {
+        session.Send(msg);
     }
 }
