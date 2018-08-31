@@ -62,3 +62,27 @@ System.Reflection.TargetInvocationException: 调用的目标发生了异常。
 无法创建 SuperSocket.SocketService.SocketServiceInstaller 安装程序类型的实例。
 System.Reflection.TargetInvocationException: 调用的目标发生了异常。
 引发了内部异常 System.ArgumentException，错误消息如下: 服务名  包含无效字符、为空或者过长(最大长度 = 80)。。
+正在卸载程序集“E:\Github_Repository\gameserver\LearnSuperSocket\LearnSuperSocket\bin\Debug\SuperSocket.SocketService.exe”。
+受影响的参数是:
+   logtoconsole = 
+   assemblypath = E:\Github_Repository\gameserver\LearnSuperSocket\LearnSuperSocket\bin\Debug\SuperSocket.SocketService.exe
+   logfile = E:\Github_Repository\gameserver\LearnSuperSocket\LearnSuperSocket\bin\Debug\SuperSocket.SocketService.InstallLog
+无法创建 SuperSocket.SocketService.SocketServiceInstaller 安装程序类型的实例。
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。
+引发了内部异常 System.ArgumentException，错误消息如下: 服务名  包含无效字符、为空或者过长(最大长度 = 80)。。
+正在安装程序集“E:\Github_Repository\gameserver\LearnSuperSocket\LearnSuperSocket\bin\Debug\SuperSocket.SocketService.exe”。
+受影响的参数是:
+   logtoconsole = 
+   assemblypath = E:\Github_Repository\gameserver\LearnSuperSocket\LearnSuperSocket\bin\Debug\SuperSocket.SocketService.exe
+   logfile = E:\Github_Repository\gameserver\LearnSuperSocket\LearnSuperSocket\bin\Debug\SuperSocket.SocketService.InstallLog
+无法创建 SuperSocket.SocketService.SocketServiceInstaller 安装程序类型的实例。
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。
+引发了内部异常 System.ArgumentException，错误消息如下: 服务名  包含无效字符、为空或者过长(最大长度 = 80)。。
+正在回滚程序集“E:\Github_Repository\gameserver\LearnSuperSocket\LearnSuperSocket\bin\Debug\SuperSocket.SocketService.exe”。
+受影响的参数是:
+   logtoconsole = 
+   assemblypath = E:\Github_Repository\gameserver\LearnSuperSocket\LearnSuperSocket\bin\Debug\SuperSocket.SocketService.exe
+   logfile = E:\Github_Repository\gameserver\LearnSuperSocket\LearnSuperSocket\bin\Debug\SuperSocket.SocketService.InstallLog
+无法创建 SuperSocket.SocketService.SocketServiceInstaller 安装程序类型的实例。
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。
+引发了内部异常 System.ArgumentException，错误消息如下: 服务名  包含无效字符、为空或者过长(最大长度 = 80)。。

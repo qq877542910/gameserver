@@ -4,11 +4,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 using SuperSocket.SocketBase.Protocol;
 
-namespace AppSession
+namespace LearnSuperSocket.AppSession
 {
-    class TelentSession : AppSession<TelentSession>
+    public class TelentSession : AppSession<TelentSession>
     {
         protected override void OnSessionStarted()
         {

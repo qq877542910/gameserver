@@ -1,2 +1,5 @@
-@echo off
-SuperSocket.SocketService.exe -c %1 %2
+supersocket list
+
+supersocket list start TelnetServer
+
+pause

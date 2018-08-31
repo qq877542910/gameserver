@@ -1,4 +1,5 @@
-﻿using AppSession;
+﻿
+using LearnSuperSocket.AppSession;
 using SuperSocket.SocketBase;
 using SuperSocket.SocketBase.Config;
 using System;
@@ -7,9 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AppServer
+namespace LearnSuperSocket.AppServer
 {
-    class TelnetServer : AppServer<TelentSession>
+    public class TelnetServer : AppServer<TelentSession>
     {
         protected override bool Setup(IRootConfig rootConfig, IServerConfig config)
         {
