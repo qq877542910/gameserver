@@ -1,0 +1,6 @@
+E:\Github_Repository\gameserver\Client\Client\bin\Debug\Client.exe.config
+E:\Github_Repository\gameserver\Client\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
+E:\Github_Repository\gameserver\Client\Client\bin\Debug\Client.exe
+E:\Github_Repository\gameserver\Client\Client\bin\Debug\Client.pdb
+E:\Github_Repository\gameserver\Client\Client\obj\Debug\Client.exe
+E:\Github_Repository\gameserver\Client\Client\obj\Debug\Client.pdb
