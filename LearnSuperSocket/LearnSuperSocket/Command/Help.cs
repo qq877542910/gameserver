@@ -11,20 +11,12 @@ using System.Threading.Tasks;
 
 namespace LearnSuperSocket.Command
 {
-    public class HelpCommand : CommandBase<TelentSession, StringRequestInfo>
+    public class Help : CommandBase<TelentSession, StringRequestInfo>
     {
-        public override string Name
-        {
-            get
-            {
-                return "Help";
-            }
-        }
-
         private List<string> cmdStrList = new List<string>()
         {
-            "USER   login ,logout , create user...",
-            "CMD    cmd...",
+            "USER   login ,logout , create user",
+            "CMD    cmd...121",
         };
 
         public override void ExecuteCommand(TelentSession session, StringRequestInfo requestInfo)

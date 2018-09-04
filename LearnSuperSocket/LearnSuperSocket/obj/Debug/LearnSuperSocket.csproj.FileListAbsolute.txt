@@ -34,3 +34,13 @@ E:\Github_Repository\gameserver\LearnSuperSocket\LearnSuperSocket\bin\Debug\Supe
 E:\Github_Repository\gameserver\LearnSuperSocket\LearnSuperSocket\bin\Debug\SuperSocket.SocketBase.xml
 E:\Github_Repository\gameserver\LearnSuperSocket\LearnSuperSocket\bin\Debug\SuperSocket.SocketEngine.xml
 E:\Github_Repository\gameserver\LearnSuperSocket\LearnSuperSocket\obj\Debug\LearnSuperSocket.csprojResolveAssemblyReference.cache
+E:\Github_Repository\gameserver\LearnSuperSocket\LearnSuperSocket\bin\Debug\Newtonsoft.Json.dll
+E:\Github_Repository\gameserver\LearnSuperSocket\LearnSuperSocket\bin\Debug\Newtonsoft.Json.xml
+E:\Github_Repository\gameserver\LearnSuperSocket\LearnSuperSocket\bin\Debug\EntityFramework.dll
+E:\Github_Repository\gameserver\LearnSuperSocket\LearnSuperSocket\bin\Debug\EntityFramework.SqlServer.dll
+E:\Github_Repository\gameserver\LearnSuperSocket\LearnSuperSocket\bin\Debug\System.Data.SQLite.dll
+E:\Github_Repository\gameserver\LearnSuperSocket\LearnSuperSocket\bin\Debug\System.Data.SQLite.EF6.dll
+E:\Github_Repository\gameserver\LearnSuperSocket\LearnSuperSocket\bin\Debug\System.Data.SQLite.Linq.dll
+E:\Github_Repository\gameserver\LearnSuperSocket\LearnSuperSocket\bin\Debug\EntityFramework.xml
+E:\Github_Repository\gameserver\LearnSuperSocket\LearnSuperSocket\bin\Debug\EntityFramework.SqlServer.xml
+E:\Github_Repository\gameserver\LearnSuperSocket\LearnSuperSocket\bin\Debug\System.Data.SQLite.xml
