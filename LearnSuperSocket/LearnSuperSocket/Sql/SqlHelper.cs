@@ -7,17 +7,17 @@ using System.Threading.Tasks;
 
 namespace LearnSuperSocket.Sql
 {
-    public class SqlHelper
+    public class MySqlHelper
     {
-        private static SqlHelper instance;
+        private static MySqlHelper instance;
 
-        public static SqlHelper Instance
+        public static MySqlHelper Instance
         {
             get
             {
                 if (instance == null)
                 {
-                    instance = new SqlHelper();
+                    instance = new MySqlHelper();
                 }
                 return instance;
             }
@@ -29,7 +29,7 @@ namespace LearnSuperSocket.Sql
         private SQLiteConnection cn;
         private SQLiteCommand cmd;
 
-        public SqlHelper()
+        public MySqlHelper()
         {
             Console.WriteLine("sql path : " + path + dbName);
 
@@ -51,7 +51,7 @@ namespace LearnSuperSocket.Sql
             cmd.Connection = cn;
         }
 
-        ~SqlHelper()
+        ~MySqlHelper()
         {
             if (cn != null && cn.State == System.Data.ConnectionState.Open)
             {
@@ -61,6 +61,7 @@ namespace LearnSuperSocket.Sql
 
         public void Action()
         {
+            SQLHelper
             CreateTable("player", new string[] { "uid", "user", "passward", "name", "sex", "age" }, new string[] { "char(50)","char(40)","char(40)","char(40)","char(10)","char(10)" });
             InsertData("player", new string[] { "000001", "test01", "123456", "test", "women", "18" });
 

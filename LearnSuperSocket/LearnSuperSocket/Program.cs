@@ -12,7 +12,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        LearnSuperSocket.Sql.SqlHelper.Instance.Action();
+        LearnSuperSocket.Sql.MySqlHelper.Instance.Action();
 
         Console.WriteLine("Press any key to start the server!");
 

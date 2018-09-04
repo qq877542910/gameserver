@@ -17,12 +17,12 @@ namespace LearnSuperSocket.Module.Player
 
         public static void CreateSqlTable()
         {
-            Sql.SqlHelper.Instance.CreateTable("PlayerVoData", new string[] {"uid", "user", "passward", "name", "sex", "age" }, new string[] { "char(50)", "char(40)", "char(40)", "char(40)", "char(10)", "char(10)" });
+            Sql.MySqlHelper.Instance.CreateTable("PlayerVoData", new string[] {"uid", "user", "passward", "name", "sex", "age" }, new string[] { "char(50)", "char(40)", "char(40)", "char(40)", "char(10)", "char(10)" });
         }
 
         public static void DeleteSqlData(long uid)
         {
-            Sql.SqlHelper.Instance.DeleteData("PlayerData", new string[] { "uid" }, new string[] { uid.ToString() }, null);
+            Sql.MySqlHelper.Instance.DeleteData("PlayerData", new string[] { "uid" }, new string[] { uid.ToString() }, null);
         }
 
         public List<PlayerVoData> GetSqlAllData()
