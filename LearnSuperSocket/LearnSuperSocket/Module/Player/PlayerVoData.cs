@@ -17,7 +17,7 @@ namespace LearnSuperSocket.Module.Player
 
         public static void CreateSqlTable()
         {
-            Sql.MySqlHelper.Instance.CreateTable("PlayerVoData", new string[] {"uid", "user", "passward", "name", "sex", "age" }, new string[] { "char(50)", "char(40)", "char(40)", "char(40)", "char(10)", "char(10)" });
+            Sql.MySqlHelper.Instance.CreateTable("PlayerVoData", new string[] {"uid", "user", "passward", "name", "sex", "age" }, new string[] { "char(50)", "char(40)", "char(40)", "char(40)", "char(40)", "char(40)" });
         }
 
         public static void DeleteSqlData(long uid)
