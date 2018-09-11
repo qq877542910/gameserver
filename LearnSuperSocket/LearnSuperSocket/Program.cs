@@ -1,4 +1,5 @@
-﻿using SuperSocket.SocketBase;
+﻿using LearnSuperSocket.Test;
+using SuperSocket.SocketBase;
 using SuperSocket.SocketBase.Protocol;
 using SuperSocket.SocketEngine;
 using System;
@@ -12,7 +13,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        LearnSuperSocket.Sql.MySqlHelper.Instance.Action();
+        TestSqlHelper ts = new LearnSuperSocket.Test.TestSqlHelper();
+        ts.Test();
 
         Console.WriteLine("Press any key to start the server!");
 
